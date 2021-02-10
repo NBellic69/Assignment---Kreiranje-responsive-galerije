@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prilagodljivi Grid</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #see {
+            text-align: left;
+        }
+
+        .wow {
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+        .tenmo {
+
+            flex-basis: 16.666%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+
+        .box {
+            width: 160px;
+            border-radius: 4px 4px 0 0;
+            height: 120px;
+            background-color: skyblue;
+        }
+
+        #ameno {
+            width: 152px;
+            height: 21px;
+            text-align: center;
+            padding: 4px;
+            border-radius: 0 0 4px 4px;
+            background-color: rgb(148, 171, 189);
+
+        }
+
+        #godlike {
+            text-align: left;
+        }
+
+        #lol {
+            width: 160px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-color: skyblue;
+            border-radius: 4px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .tenmo {
+                flex-basis: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .tenmo {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .tenmo {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="see">Gallery Heading</h1>
+    <div class="greek">
+        <div class="wow">
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+            <div class="tenmo">
+                <div class="box"><img src="see.png" alt="lol" id="lol"></div>
+                <div id="ameno">Image Title</div>
+            </div>
+        </div>
+    </div>
+    <p id="godlike">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rem cumque nesciunt, eum nemo
+        exercitationem
+        omnis voluptas ab vel, molestiae quos adipisci quisquam, voluptate nulla? Dolorem aliquam ab corrupti
+        dignissimos.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rem cumque nesciunt, eum nemo
+        exercitationem omnis voluptas ab vel, molestiae quos adipisci quisquam, voluptate nulla? Dolorem aliquam ab
+        corrupti dignissimos.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rem cumque nesciunt, eum
+        nemo exercitationem omnis voluptas ab vel, molestiae quos adipisci quisquam, voluptate nulla? Dolorem aliquam ab
+        corrupti dignissimos.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rem cumque nesciunt, eum
+        nemo exercitationem omnis voluptas ab vel, molestiae quos adipisci quisquam, voluptate nulla? Dolorem aliquam ab
+        corrupti dignissimos.</p>
+</body>
+
+</html>
